@@ -13,11 +13,11 @@ if ! ${DOCKER} ps >/dev/null; then
 fi
 
 if [ ! -e "cache/opencv-python_${OPENCV_VERSION}_armhf.deb" ]; then
-    ${DOCKER} build --rm=false -t opsi-opencv opencv-build
+    ${DOCKER} build --rm=false -t opsi-opencv-new opencv-build
     ${DOCKER} run --rm --privileged \
         --volume "$(pwd)":/packages \
         --name "opencv-build_work" \
-        opsi-opencv \
+        opsi-opencv-new \
         bash -e -o pipefail -c "cd /packages/opencv-build/; OPENCV_VERSION=${OPENCV_VERSION} ./build.sh"
     mkdir -p cache/
     rm -rf cache/*
