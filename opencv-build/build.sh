@@ -10,6 +10,9 @@ CV_DIR="build/opencv-${OPENCV_VERSION}"
 mkdir -p "${CV_DIR}/build"
 
 ls ${CV_DIR}/platforms/linux/arm-gnueabi.toolchain.cmake
+
+read -p "wait for enter"
+
 cmake -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_TOOLCHAIN_FILE="../platforms/linux/arm-gnueabi.toolchain.cmake" \
     -D OPENCV_ENABLE_NONFREE=ON \

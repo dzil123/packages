@@ -14,7 +14,7 @@ fi
 
 if [ ! -e "cache/opencv-python_${OPENCV_VERSION}_armhf.deb" ]; then
     ${DOCKER} build --rm=false -t opsi-opencv-new opencv-build
-    ${DOCKER} run --rm --privileged \
+    ${DOCKER} run -t -i --rm --privileged \
         --volume "$(pwd)":/packages \
         --name "opencv-build_work" \
         opsi-opencv-new \
