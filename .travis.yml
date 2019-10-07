@@ -1,25 +1,25 @@
 dist: bionic
 jobs:
   include:
-    - stage: build
-      script: ./build_scripts/build_component.sh opencv http://ikl.sh:5000/cigroup/ travis $TFG_PASSWORD
-      cache:
-        directories:
-          - cache
-    - stage: build
-      script: ./build_scripts/build_component.sh python_packages http://ikl.sh:5000/cigroup/ travis $TFG_PASSWORD
-      addons:
-        apt:
-          update: true
-          packages:
-            - python3-pip
-            - python3-all
-            - python-all
-            - python3-setuptools
-            - debhelper
-            - fakeroot
-      before_install:
-        - pip3 install --user stdeb
+    # - stage: build
+    #   script: ./build_scripts/build_component.sh opencv http://ikl.sh:5000/cigroup/ travis $TFG_PASSWORD
+    #   cache:
+    #     directories:
+    #       - cache
+    # - stage: build
+    #   script: ./build_scripts/build_component.sh python_packages http://ikl.sh:5000/cigroup/ travis $TFG_PASSWORD
+    #   addons:
+    #     apt:
+    #       update: true
+    #       packages:
+    #         - python3-pip
+    #         - python3-all
+    #         - python-all
+    #         - python3-setuptools
+    #         - debhelper
+    #         - fakeroot
+    #   before_install:
+    #     - pip3 install --user stdeb
     - stage: build
       script: ./build_scripts/build_component.sh opensight_deb http://ikl.sh:5000/cigroup/ travis $TFG_PASSWORD
       addons:
