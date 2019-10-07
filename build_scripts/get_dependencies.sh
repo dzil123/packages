@@ -21,6 +21,8 @@ for file in packages/deps/*; do
     dpkg-deb -I "$file" | grep Depends | sed -e 's/ Depends: //' -e 's/, /\n/g' -e 's/:.*$//g' -e 's/ (.*$//g' > dependencies
 done
 sort -u dependencies -o dependencies
+echo "DEPENDENCIES STAGE 1"
+cat dependencies
 
 # remove packages already in folder
 for file in packages/*; do
@@ -32,6 +34,8 @@ for line in $(cat dependencies); do
     apt-cache $APT_OPTS depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances $line 2>&- | grep -v '<' | grep Depends | sed -r 's/.+Depends: //' >> dependencies
 done
 sort -u dependencies -o dependencies
+echo "DEPENDENCIES STAGE 2"
+cat dependencies
 
 # this is one of those "wtf, why would you do this, what is going on" moments so let me explain
 # basically, apt does not have any method (reliable) of setting the default architecture
@@ -39,12 +43,16 @@ sort -u dependencies -o dependencies
 # here, it iterates through all of the dependencies and checks if it is an "all" package or an armhf/amd64 package (amd64 happens when APT:Architecture does not work)
 # this ensures that apt-download always downloads the correct architecture package
 for dep in $(cat dependencies); do
+    echo "TRYING DEP" $dep
+    apt-cache show $dep | grep Architecture | grep -q all && echo "$dep IS ALL"
     apt-cache show $dep | grep Architecture | grep -q all && echo "$dep" >> new_dependencies
     apt-cache show $dep | grep Architecture | grep -q -e armhf -e amd64 && echo "$dep:armhf" >> new_dependencies
 done
 
 mv new_dependencies dependencies
 sort -u dependencies -o dependencies
+echo "NEW DEPENDENCIES"
+cat dependencies
 
 mkdir -p packages/system-deps
 # fix permission errors
