@@ -16,12 +16,12 @@ curl https://archive.raspbian.org/raspbian.public.key | apt-key add -
 dpkg --add-architecture armhf
 apt-get update
 
-ls packages/deps/*
-dpkg -I packages/deps/opensight*.deb
-# for file in packages/deps/*; do
-#     #                                          Removes depends  Comma to newline   Remove all after : and (
-#     dpkg-deb -I "$file" | grep Depends | sed -e 's/ Depends: //' -e 's/, /\n/g' -e 's/:.*$//g' -e 's/ (.*$//g' > dependencies
-# done
+ls -l packages/deps/*
+for file in packages/deps/*; do
+    echo "CHECKING DEPS FOR: " $file
+    #                                          Removes depends  Comma to newline   Remove all after : and (
+    dpkg-deb -I "$file" | grep Depends | sed -e 's/ Depends: //' -e 's/, /\n/g' -e 's/:.*$//g' -e 's/ (.*$//g' > dependencies
+done
 sort -u dependencies -o dependencies
 echo "DEPENDENCIES STAGE 1"
 cat dependencies
