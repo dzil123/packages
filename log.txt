@@ -1,0 +1,1805 @@
+Sending build context to Docker daemon   5.12kB
+Step 1/3 : FROM opsi-opencv:latest
+ ---> 5e82f28e869c
+Step 2/3 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Using cache
+ ---> ad37f4064f36
+Step 3/3 : RUN dpkg --add-architecture armhf &&     apt-get -y update &&     apt-get -y install         gstreamer1.0-rtsp:armhf gstreamer1.0-plugins-bad:armhf gstreamer1.0-omx:armhf         libgstreamer1.0-dev:armhf libgstrtspserver-1.0-dev:armhf gstreamer-1.0:armhf         libgstreamer1.0-0:armhf         gstreamer1.0-plugins-base:armhf         gstreamer1.0-plugins-good:armhf         gstreamer1.0-plugins-bad:armhf         gstreamer1.0-plugins-ugly:armhf         gstreamer1.0-libav:armhf         gstreamer1.0-doc:armhf         gstreamer1.0-tools:armhf         libgstreamer1.0-dev:armhf         libgstreamer-plugins-base1.0-dev:armhf     && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 55608dc38470
+Successfully built 55608dc38470
+Successfully tagged opsi-opencv-new:latest
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   120    0   120    0     0    510      0 --:--:-- --:--:-- --:--:--   510
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1573k    0 1573k    0     0  1175k      0 --:--:--  0:00:01 --:--:-- 1589k100 5690k    0 5690k    0     0  2429k      0 --:--:--  0:00:02 --:--:-- 2853k100 9749k    0 9749k    0     0  2917k      0 --:--:--  0:00:03 --:--:-- 3256k100 13.9M    0 13.9M    0     0  3297k      0 --:--:--  0:00:04 --:--:-- 3585k100 18.3M    0 18.3M    0     0  3523k      0 --:--:--  0:00:05 --:--:-- 3768k100 22.8M    0 22.8M    0     0  3690k      0 --:--:--  0:00:06 --:--:-- 4364k100 27.6M    0 27.6M    0     0  3856k      0 --:--:--  0:00:07 --:--:-- 4524k100 32.9M    0 32.9M    0     0  4040k      0 --:--:--  0:00:08 --:--:-- 4791k100 38.3M    0 38.3M    0     0  4205k      0 --:--:--  0:00:09 --:--:-- 4994k100 43.9M    0 43.9M    0     0  4354k      0 --:--:--  0:00:10 --:--:-- 5241k100 49.0M    0 49.0M    0     0  4434k      0 --:--:--  0:00:11 --:--:-- 5375k100 54.3M    0 54.3M    0     0  4514k      0 --:--:--  0:00:12 --:--:-- 5480k100 60.2M    0 60.2M    0     0  4622k      0 --:--:--  0:00:13 --:--:-- 5593k100 65.7M    0 65.7M    0     0  4698k      0 --:--:--  0:00:14 --:--:-- 5617k100 71.3M    0 71.3M    0     0  4761k      0 --:--:--  0:00:15 --:--:-- 5603k100 76.9M    0 76.9M    0     0  4821k      0 --:--:--  0:00:16 --:--:-- 5699k100 82.1M    0 82.1M    0     0  4850k      0 --:--:--  0:00:17 --:--:-- 5679k100 84.3M    0 84.3M    0     0  4868k      0 --:--:--  0:00:17 --:--:-- 5615k
+build/opencv-4.1.1/platforms/linux/arm-gnueabi.toolchain.cmake
+wait for enter
+-- The CXX compiler identification is GNU 8.3.0
+-- The C compiler identification is GNU 8.3.0
+-- Check for working CXX compiler: /usr/bin/arm-linux-gnueabihf-g++
+-- Check for working CXX compiler: /usr/bin/arm-linux-gnueabihf-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/arm-linux-gnueabihf-gcc
+-- Check for working C compiler: /usr/bin/arm-linux-gnueabihf-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detected processor: arm
+-- sizeof(void) = 4 on 64 bit processor. Assume 32-bit compilation mode
+-- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) (Required is at least version "2.7")
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.7.3", minimum required is "3.2") 
+-- Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version "3.7")
+-- Looking for ccache - not found
+-- Performing Test HAVE_CXX_FSIGNED_CHAR
+-- Performing Test HAVE_CXX_FSIGNED_CHAR - Success
+-- Performing Test HAVE_C_FSIGNED_CHAR
+-- Performing Test HAVE_C_FSIGNED_CHAR - Success
+-- Performing Test HAVE_CXX_W
+-- Performing Test HAVE_CXX_W - Success
+-- Performing Test HAVE_C_W
+-- Performing Test HAVE_C_W - Success
+-- Performing Test HAVE_CXX_WALL
+-- Performing Test HAVE_CXX_WALL - Success
+-- Performing Test HAVE_C_WALL
+-- Performing Test HAVE_C_WALL - Success
+-- Performing Test HAVE_CXX_WERROR_RETURN_TYPE
+-- Performing Test HAVE_CXX_WERROR_RETURN_TYPE - Success
+-- Performing Test HAVE_C_WERROR_RETURN_TYPE
+-- Performing Test HAVE_C_WERROR_RETURN_TYPE - Success
+-- Performing Test HAVE_CXX_WERROR_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_CXX_WERROR_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_C_WERROR_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_C_WERROR_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_CXX_WERROR_ADDRESS
+-- Performing Test HAVE_CXX_WERROR_ADDRESS - Success
+-- Performing Test HAVE_C_WERROR_ADDRESS
+-- Performing Test HAVE_C_WERROR_ADDRESS - Success
+-- Performing Test HAVE_CXX_WERROR_SEQUENCE_POINT
+-- Performing Test HAVE_CXX_WERROR_SEQUENCE_POINT - Success
+-- Performing Test HAVE_C_WERROR_SEQUENCE_POINT
+-- Performing Test HAVE_C_WERROR_SEQUENCE_POINT - Success
+-- Performing Test HAVE_CXX_WFORMAT
+-- Performing Test HAVE_CXX_WFORMAT - Success
+-- Performing Test HAVE_C_WFORMAT
+-- Performing Test HAVE_C_WFORMAT - Success
+-- Performing Test HAVE_CXX_WERROR_FORMAT_SECURITY
+-- Performing Test HAVE_CXX_WERROR_FORMAT_SECURITY - Success
+-- Performing Test HAVE_C_WERROR_FORMAT_SECURITY
+-- Performing Test HAVE_C_WERROR_FORMAT_SECURITY - Success
+-- Performing Test HAVE_CXX_WMISSING_DECLARATIONS
+-- Performing Test HAVE_CXX_WMISSING_DECLARATIONS - Success
+-- Performing Test HAVE_C_WMISSING_DECLARATIONS
+-- Performing Test HAVE_C_WMISSING_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_WMISSING_PROTOTYPES
+-- Performing Test HAVE_CXX_WMISSING_PROTOTYPES - Failed
+-- Performing Test HAVE_C_WMISSING_PROTOTYPES
+-- Performing Test HAVE_C_WMISSING_PROTOTYPES - Success
+-- Performing Test HAVE_CXX_WSTRICT_PROTOTYPES
+-- Performing Test HAVE_CXX_WSTRICT_PROTOTYPES - Failed
+-- Performing Test HAVE_C_WSTRICT_PROTOTYPES
+-- Performing Test HAVE_C_WSTRICT_PROTOTYPES - Success
+-- Performing Test HAVE_CXX_WUNDEF
+-- Performing Test HAVE_CXX_WUNDEF - Success
+-- Performing Test HAVE_C_WUNDEF
+-- Performing Test HAVE_C_WUNDEF - Success
+-- Performing Test HAVE_CXX_WINIT_SELF
+-- Performing Test HAVE_CXX_WINIT_SELF - Success
+-- Performing Test HAVE_C_WINIT_SELF
+-- Performing Test HAVE_C_WINIT_SELF - Success
+-- Performing Test HAVE_CXX_WPOINTER_ARITH
+-- Performing Test HAVE_CXX_WPOINTER_ARITH - Success
+-- Performing Test HAVE_C_WPOINTER_ARITH
+-- Performing Test HAVE_C_WPOINTER_ARITH - Success
+-- Performing Test HAVE_CXX_WSHADOW
+-- Performing Test HAVE_CXX_WSHADOW - Success
+-- Performing Test HAVE_C_WSHADOW
+-- Performing Test HAVE_C_WSHADOW - Success
+-- Performing Test HAVE_CXX_WSIGN_PROMO
+-- Performing Test HAVE_CXX_WSIGN_PROMO - Success
+-- Performing Test HAVE_C_WSIGN_PROMO
+-- Performing Test HAVE_C_WSIGN_PROMO - Failed
+-- Performing Test HAVE_CXX_WUNINITIALIZED
+-- Performing Test HAVE_CXX_WUNINITIALIZED - Success
+-- Performing Test HAVE_C_WUNINITIALIZED
+-- Performing Test HAVE_C_WUNINITIALIZED - Success
+-- Performing Test HAVE_CXX_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_WSUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_C_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_C_WSUGGEST_OVERRIDE - Failed
+-- Performing Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR - Failed
+-- Performing Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
+-- Performing Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS - Failed
+-- Performing Test HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
+-- Performing Test HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS - Failed
+-- Performing Test HAVE_CXX_WNO_COMMENT
+-- Performing Test HAVE_CXX_WNO_COMMENT - Success
+-- Performing Test HAVE_C_WNO_COMMENT
+-- Performing Test HAVE_C_WNO_COMMENT - Success
+-- Performing Test HAVE_CXX_WIMPLICIT_FALLTHROUGH_3
+-- Performing Test HAVE_CXX_WIMPLICIT_FALLTHROUGH_3 - Success
+-- Performing Test HAVE_C_WIMPLICIT_FALLTHROUGH_3
+-- Performing Test HAVE_C_WIMPLICIT_FALLTHROUGH_3 - Success
+-- Performing Test HAVE_CXX_WNO_STRICT_OVERFLOW
+-- Performing Test HAVE_CXX_WNO_STRICT_OVERFLOW - Success
+-- Performing Test HAVE_C_WNO_STRICT_OVERFLOW
+-- Performing Test HAVE_C_WNO_STRICT_OVERFLOW - Success
+-- Performing Test HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HAVE_C_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HAVE_C_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HAVE_CXX_PTHREAD
+-- Performing Test HAVE_CXX_PTHREAD - Success
+-- Performing Test HAVE_C_PTHREAD
+-- Performing Test HAVE_C_PTHREAD - Success
+-- Performing Test HAVE_CXX_FOMIT_FRAME_POINTER
+-- Performing Test HAVE_CXX_FOMIT_FRAME_POINTER - Success
+-- Performing Test HAVE_C_FOMIT_FRAME_POINTER
+-- Performing Test HAVE_C_FOMIT_FRAME_POINTER - Success
+-- Performing Test HAVE_CXX_FFUNCTION_SECTIONS
+-- Performing Test HAVE_CXX_FFUNCTION_SECTIONS - Success
+-- Performing Test HAVE_C_FFUNCTION_SECTIONS
+-- Performing Test HAVE_C_FFUNCTION_SECTIONS - Success
+-- Performing Test HAVE_CXX_FDATA_SECTIONS
+-- Performing Test HAVE_CXX_FDATA_SECTIONS - Success
+-- Performing Test HAVE_C_FDATA_SECTIONS
+-- Performing Test HAVE_C_FDATA_SECTIONS - Success
+-- Performing Test HAVE_CXX_MFPU_VFPV3
+-- Performing Test HAVE_CXX_MFPU_VFPV3 - Success
+-- Performing Test HAVE_CPU_NEON_SUPPORT (check file: cmake/checks/cpu_neon.cpp)
+-- Performing Test HAVE_CPU_NEON_SUPPORT - Failed
+-- Performing Test HAVE_CXX_MFPU_NEON (check file: cmake/checks/cpu_neon.cpp)
+-- Performing Test HAVE_CXX_MFPU_NEON - Success
+-- Performing Test HAVE_CPU_FP16_SUPPORT (check file: cmake/checks/cpu_fp16.cpp)
+-- Performing Test HAVE_CPU_FP16_SUPPORT - Failed
+-- Performing Test HAVE_CXX_MFPU_NEON_FP16_MFP16_FORMAT_IEEE (check file: cmake/checks/cpu_fp16.cpp)
+-- Performing Test HAVE_CXX_MFPU_NEON_FP16_MFP16_FORMAT_IEEE - Success
+-- Performing Test HAVE_CPU_BASELINE_FLAGS
+-- Performing Test HAVE_CPU_BASELINE_FLAGS - Success
+-- Performing Test HAVE_CXX_FVISIBILITY_HIDDEN
+-- Performing Test HAVE_CXX_FVISIBILITY_HIDDEN - Success
+-- Performing Test HAVE_C_FVISIBILITY_HIDDEN
+-- Performing Test HAVE_C_FVISIBILITY_HIDDEN - Success
+-- Performing Test HAVE_CXX_FVISIBILITY_INLINES_HIDDEN
+-- Performing Test HAVE_CXX_FVISIBILITY_INLINES_HIDDEN - Success
+-- Performing Test HAVE_C_FVISIBILITY_INLINES_HIDDEN
+-- Performing Test HAVE_C_FVISIBILITY_INLINES_HIDDEN - Failed
+-- OpenCV disables pkg-config to avoid using of host libraries. Consider using PKG_CONFIG_LIBDIR to specify target SYSROOT
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - found
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for memalign
+-- Looking for memalign - found
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) (Required is at least version "1.2.3")
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Check size of off64_t
+-- Check size of off64_t - failed
+-- Performing Test HAVE_C_WNO_SHORTEN_64_TO_32
+-- Performing Test HAVE_C_WNO_SHORTEN_64_TO_32 - Failed
+-- Performing Test HAVE_C_WNO_ATTRIBUTES
+-- Performing Test HAVE_C_WNO_ATTRIBUTES - Success
+-- Performing Test HAVE_C_WNO_STRICT_PROTOTYPES
+-- Performing Test HAVE_C_WNO_STRICT_PROTOTYPES - Success
+-- Performing Test HAVE_C_WNO_MISSING_PROTOTYPES
+-- Performing Test HAVE_C_WNO_MISSING_PROTOTYPES - Success
+-- Performing Test HAVE_C_WNO_MISSING_DECLARATIONS
+-- Performing Test HAVE_C_WNO_MISSING_DECLARATIONS - Success
+-- Performing Test HAVE_C_WNO_SHIFT_NEGATIVE_VALUE
+-- Performing Test HAVE_C_WNO_SHIFT_NEGATIVE_VALUE - Success
+-- Performing Test HAVE_C_WNO_UNDEF
+-- Performing Test HAVE_C_WNO_UNDEF - Success
+-- Performing Test HAVE_C_WNO_IMPLICIT_FALLTHROUGH
+-- Performing Test HAVE_C_WNO_IMPLICIT_FALLTHROUGH - Success
+-- Could NOT find JPEG (missing: JPEG_LIBRARY JPEG_INCLUDE_DIR) 
+-- Performing Test HAVE_C_WNO_UNUSED_PARAMETER
+-- Performing Test HAVE_C_WNO_UNUSED_PARAMETER - Success
+-- Performing Test HAVE_C_WNO_SIGN_COMPARE
+-- Performing Test HAVE_C_WNO_SIGN_COMPARE - Success
+-- libjpeg-turbo: VERSION = 2.0.2, BUILD = opencv-4.1.1-libjpeg-turbo
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of unsigned long
+-- Check size of unsigned long - done
+-- Performing Test HAVE_BUILTIN_CTZL
+-- Performing Test HAVE_BUILTIN_CTZL - Success
+-- Looking for include file locale.h
+-- Looking for include file locale.h - found
+-- Looking for include file stdlib.h
+-- Looking for include file stdlib.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Could NOT find TIFF (missing: TIFF_LIBRARY TIFF_INCLUDE_DIR) 
+-- Looking for assert.h
+-- Looking for assert.h - found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for io.h
+-- Looking for io.h - not found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for search.h
+-- Looking for search.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Performing Test C_HAS_inline
+-- Performing Test C_HAS_inline - Success
+-- Check size of signed short
+-- Check size of signed short - done
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Check size of signed int
+-- Check size of signed int - done
+-- Check size of unsigned int
+-- Check size of unsigned int - done
+-- Check size of signed long
+-- Check size of signed long - done
+-- Check size of signed long long
+-- Check size of signed long long - done
+-- Check size of unsigned long long
+-- Check size of unsigned long long - done
+-- Check size of unsigned char *
+-- Check size of unsigned char * - done
+-- Check size of ptrdiff_t
+-- Check size of ptrdiff_t - done
+-- Check size of INT8
+-- Check size of INT8 - failed
+-- Check size of INT16
+-- Check size of INT16 - failed
+-- Check size of INT32
+-- Check size of INT32 - failed
+-- Looking for floor
+-- Looking for floor - found
+-- Looking for pow
+-- Looking for pow - found
+-- Looking for sqrt
+-- Looking for sqrt - found
+-- Looking for isascii
+-- Looking for isascii - found
+-- Looking for memset
+-- Looking for memset - found
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for getopt
+-- Looking for getopt - found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for setmode
+-- Looking for setmode - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for strchr
+-- Looking for strchr - found
+-- Looking for strrchr
+-- Looking for strrchr - found
+-- Looking for strstr
+-- Looking for strstr - found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for lfind
+-- Looking for lfind - found
+-- Performing Test HAVE_SNPRINTF
+-- Performing Test HAVE_SNPRINTF - Success
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_VARIABLE
+-- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_VARIABLE - Success
+-- Performing Test HAVE_C_WNO_UNUSED
+-- Performing Test HAVE_C_WNO_UNUSED - Success
+-- Performing Test HAVE_C_WNO_CAST_ALIGN
+-- Performing Test HAVE_C_WNO_CAST_ALIGN - Success
+-- Performing Test HAVE_C_WNO_SHADOW
+-- Performing Test HAVE_C_WNO_SHADOW - Success
+-- Performing Test HAVE_C_WNO_MAYBE_UNINITIALIZED
+-- Performing Test HAVE_C_WNO_MAYBE_UNINITIALIZED - Success
+-- Performing Test HAVE_C_WNO_POINTER_TO_INT_CAST
+-- Performing Test HAVE_C_WNO_POINTER_TO_INT_CAST - Success
+-- Performing Test HAVE_C_WNO_INT_TO_POINTER_CAST
+-- Performing Test HAVE_C_WNO_INT_TO_POINTER_CAST - Success
+-- Performing Test HAVE_C_WNO_MISLEADING_INDENTATION
+-- Performing Test HAVE_C_WNO_MISLEADING_INDENTATION - Success
+-- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS
+-- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED_PARAMETER
+-- Performing Test HAVE_CXX_WNO_UNUSED_PARAMETER - Success
+-- Performing Test HAVE_CXX_WNO_MISSING_PROTOTYPES
+-- Performing Test HAVE_CXX_WNO_MISSING_PROTOTYPES - Failed
+-- Performing Test HAVE_CXX_WNO_UNDEF
+-- Performing Test HAVE_CXX_WNO_UNDEF - Success
+-- Performing Test HAVE_C_STD_C99
+-- Performing Test HAVE_C_STD_C99 - Success
+-- Performing Test HAVE_C_WNO_UNUSED_VARIABLE
+-- Performing Test HAVE_C_WNO_UNUSED_VARIABLE - Success
+-- Performing Test HAVE_C_WNO_UNUSED_FUNCTION
+-- Performing Test HAVE_C_WNO_UNUSED_FUNCTION - Success
+-- Found JPEG: libjpeg-turbo (found version "") 
+-- Could NOT find Jasper (missing: JASPER_LIBRARIES JASPER_INCLUDE_DIR) 
+-- Performing Test HAVE_C_WNO_IMPLICIT_FUNCTION_DECLARATION
+-- Performing Test HAVE_C_WNO_IMPLICIT_FUNCTION_DECLARATION - Success
+-- Performing Test HAVE_C_WNO_UNINITIALIZED
+-- Performing Test HAVE_C_WNO_UNINITIALIZED - Success
+-- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_PARAMETER
+-- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_PARAMETER - Success
+-- Performing Test HAVE_C_WNO_POINTER_COMPARE
+-- Performing Test HAVE_C_WNO_POINTER_COMPARE - Success
+-- Performing Test HAVE_C_WNO_ABSOLUTE_VALUE
+-- Performing Test HAVE_C_WNO_ABSOLUTE_VALUE - Failed
+-- Could NOT find ZLIB (missing: ZLIB_INCLUDE_DIR) (found version "1.2.11")
+-- Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/arm-linux-gnueabihf-gcc
+-- Could not find OpenBLAS include. Turning OpenBLAS_FOUND off
+-- Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+-- Could NOT find Atlas (missing: Atlas_CBLAS_INCLUDE_DIR Atlas_CLAPACK_INCLUDE_DIR Atlas_CBLAS_LIBRARY Atlas_BLAS_LIBRARY Atlas_LAPACK_LIBRARY) 
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- Found Threads: TRUE  
+-- Could NOT find BLAS (missing: BLAS_LIBRARIES) 
+-- LAPACK requires BLAS
+-- A library with LAPACK API not found. Please specify library location.
+-- Performing Test HAVE_CXX_WNO_DEPRECATED
+-- Performing Test HAVE_CXX_WNO_DEPRECATED - Success
+-- Performing Test HAVE_CXX_WNO_SHADOW
+-- Performing Test HAVE_CXX_WNO_SHADOW - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS
+-- Performing Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS - Success
+-- Performing Test HAVE_CXX_WNO_SIGN_COMPARE
+-- Performing Test HAVE_CXX_WNO_SIGN_COMPARE - Success
+-- Performing Test HAVE_CXX_WNO_SIGN_PROMO
+-- Performing Test HAVE_CXX_WNO_SIGN_PROMO - Success
+-- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE
+-- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE - Failed
+-- Performing Test HAVE_CXX_WNO_IGNORED_QUALIFIERS
+-- Performing Test HAVE_CXX_WNO_IGNORED_QUALIFIERS - Success
+-- Performing Test HAVE_CXX_WNO_EXTRA
+-- Performing Test HAVE_CXX_WNO_EXTRA - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED_FUNCTION
+-- Performing Test HAVE_CXX_WNO_UNUSED_FUNCTION - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE
+-- Performing Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE - Success
+-- Performing Test HAVE_CXX_WNO_SHORTEN_64_TO_32
+-- Performing Test HAVE_CXX_WNO_SHORTEN_64_TO_32 - Failed
+-- Performing Test HAVE_CXX_WNO_INVALID_OFFSETOF
+-- Performing Test HAVE_CXX_WNO_INVALID_OFFSETOF - Success
+-- Performing Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH
+-- Performing Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH - Failed
+-- Performing Test HAVE_CXX_WNO_SUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_WNO_SUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE
+-- Performing Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE - Failed
+-- Performing Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH
+-- Performing Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH - Success
+-- Performing Test HAVE_CXX_WNO_CLASS_MEMACCESS
+-- Performing Test HAVE_CXX_WNO_CLASS_MEMACCESS - Success
+-- Performing Test CXX_HAS_MFPU_NEON
+-- Performing Test CXX_HAS_MFPU_NEON - Success
+-- Performing Test C_HAS_MFPU_NEON
+-- Performing Test C_HAS_MFPU_NEON - Success
+-- Looking for dlerror in dl
+-- Looking for dlerror in dl - found
+-- ADE: Download: v0.1.1d.zip
+-- OpenCV Python: during development append to PYTHONPATH: /packages/opencv-build/build/opencv-4.1.1/build/python_loader
+-- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
+-- Excluding from source files list: modules/imgproc/src/sumpixels.avx512_skx.cpp
+-- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS - Success
+-- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /packages/opencv-build/build/opencv-4.1.1/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
+-- opencv_dnn: filter out cuda4dnn source code
+-- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx.cpp
+-- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx2.cpp
+-- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx512_skx.cpp
+-- Excluding from source files list: modules/features2d/src/fast.avx2.cpp
+-- Performing Test HAVE_CXX_WNO_OVERLOADED_VIRTUAL
+-- Performing Test HAVE_CXX_WNO_OVERLOADED_VIRTUAL - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED_PRIVATE_FIELD
+-- Performing Test HAVE_CXX_WNO_UNUSED_PRIVATE_FIELD - Failed
+-- 
+-- General configuration for OpenCV 4.1.1 =====================================
+--   Version control:               c16fae2
+-- 
+--   Platform:
+--     Timestamp:                   2019-10-07T19:22:55Z
+--     Host:                        Linux 5.3.4-arch1-1-ARCH x86_64
+--     Target:                      Linux 1 arm
+--     CMake:                       3.13.4
+--     CMake generator:             Unix Makefiles
+--     CMake build tool:            /usr/bin/make
+--     Configuration:               Release
+-- 
+--   CPU/HW features:
+--     Baseline:                    VFPV3 NEON
+--       requested:                 DETECT
+--       required:                  VFPV3 NEON
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      YES
+--     C++ Compiler:                /usr/bin/arm-linux-gnueabihf-g++  (ver 8.3.0)
+--     C++ flags (Release):         -mthumb  -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+--     C++ flags (Debug):           -mthumb  -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+--     C Compiler:                  /usr/bin/arm-linux-gnueabihf-gcc
+--     C flags (Release):           -mthumb  -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
+--     C flags (Debug):             -mthumb  -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
+--     Linker flags (Release):      -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now   -Wl,--gc-sections  
+--     Linker flags (Debug):        -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now   -Wl,--gc-sections  
+--     ccache:                      NO
+--     Precompiled headers:         NO
+--     Extra dependencies:          dl m pthread rt
+--     3rdparty dependencies:
+-- 
+--   OpenCV modules:
+--     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo python3 stitching video videoio
+--     Disabled:                    world
+--     Disabled by dependency:      -
+--     Unavailable:                 java js python2 ts
+--     Applications:                apps
+--     Documentation:               NO
+--     Non-free algorithms:         YES
+-- 
+--   GUI: 
+-- 
+--   Media I/O: 
+--     ZLib:                        build (ver 1.2.11)
+--     JPEG:                        libjpeg-turbo (ver 2.0.2-62)
+--     WEBP:                        build (ver encoder: 0x020e)
+--     PNG:                         build (ver 1.6.37)
+--     TIFF:                        build (ver 42 - 4.0.10)
+--     JPEG 2000:                   build (ver 1.900.1)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     DC1394:                      NO
+--     FFMPEG:                      NO
+--       avcodec:                   NO
+--       avformat:                  NO
+--       avutil:                    NO
+--       swscale:                   NO
+--       avresample:                NO
+--     GStreamer:                   NO
+--     v4l/v4l2:                    YES (linux/videodev2.h)
+-- 
+--   Parallel framework:            pthreads
+-- 
+--   Trace:                         YES (with Intel ITT)
+-- 
+--   Other third-party libraries:
+--     Lapack:                      NO
+--     Custom HAL:                  YES (carotene (ver 0.0.1))
+--     Protobuf:                    build (3.5.1)
+-- 
+--   OpenCL:                        YES (no extra features)
+--     Include path:                /packages/opencv-build/build/opencv-4.1.1/3rdparty/include/opencl/1.2
+--     Link libraries:              Dynamic load
+-- 
+--   Python 3:
+--     Interpreter:                 /usr/bin/python3 (ver 3.7.3)
+--     Libraries:                   /usr/lib/arm-linux-gnueabihf/libpython3.7m.so
+--     numpy:                       /usr/lib/python3/dist-packages/numpy/core/include (ver undefined - cannot be probed because of the cross-compilation)
+--     install path:                lib/python3.7/dist-packages/cv2/python-3.7
+-- 
+--   Python (for build):            /usr/bin/python3
+-- 
+--   Install to:                    /packages/opencv-build/build/opencv-4.1.1/build/install
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /packages/opencv-build/build/opencv-4.1.1/build
+make: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[1]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target ittnotify[0m
+[35m[1mScanning dependencies of target libjasper[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target zlib[0m
+[35m[1mScanning dependencies of target libprotobuf[0m
+[35m[1mScanning dependencies of target quirc[0m
+[35m[1mScanning dependencies of target libwebp[0m
+[35m[1mScanning dependencies of target libjpeg-turbo[0m
+[35m[1mScanning dependencies of target opencv_videoio_plugins[0m
+[35m[1mScanning dependencies of target gen_opencv_python_source[0m
+[35m[1mScanning dependencies of target ade[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target carotene_objs[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  0%] [32mBuilding C object 3rdparty/ittnotify/CMakeFiles/ittnotify.dir/src/ittnotify/jitprofiling.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  0%] Built target opencv_videoio_plugins
+[  0%] [34m[1mGenerate files for Python bindings and documentation[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  0%] [32mBuilding C object 3rdparty/ittnotify/CMakeFiles/ittnotify.dir/src/ittnotify/ittnotify_static.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  0%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/adler32.c.o[0m
+[  0%] [32mBuilding C object 3rdparty/quirc/CMakeFiles/quirc.dir/src/decode.c.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  0%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/alloc.cpp.o[0m
+[  0%] [32mBuilding C object 3rdparty/quirc/CMakeFiles/quirc.dir/src/quirc.c.o[0m
+[  0%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcapimin.c.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  0%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_cm.c.o[0m
+[  0%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/absdiff.cpp.o[0m
+[  0%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/alpha_dec.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  1%] [32mBuilding C object 3rdparty/quirc/CMakeFiles/quirc.dir/src/version_db.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/buffer_dec.c.o[0m
+[  1%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o[0m
+[  1%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcapistd.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/frame_dec.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/compress.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/idec_dec.c.o[0m
+[  1%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/assert.cpp.o[0m
+[  1%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/crc32.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jccoefct.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jccolor.c.o[0m
+[  1%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/check_cycles.cpp.o[0m
+Note: Class Feature2D has more than 1 base class (not supported by Python C extensions)
+      Bases:  cv::Algorithm, cv::class, cv::Feature2D, cv::Algorithm
+      Only the first base class will be used
+[  1%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/deflate.c.o[0m
+[  1%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/edge.cpp.o[0m
+Note: Class detail_GraphCutSeamFinder has more than 1 base class (not supported by Python C extensions)
+      Bases:  cv::detail::GraphCutSeamFinderBase, cv::detail::SeamFinder
+      Only the first base class will be used
+[  1%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/execution_engine.cpp.o[0m
+[  1%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/io_dec.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_debug.c.o[0m
+[  1%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_getopt.c.o[0m
+[  1%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/accumulate.cpp.o[0m
+[  1%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_icc.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  1%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o[0m
+[  1%] Built target gen_opencv_python_source
+[  1%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_iccdata.c.o[0m
+[  2%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/quant_dec.c.o[0m
+[  2%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o[0m
+[  3%] [32m[1mLinking C static library ../lib/libittnotify.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  3%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/tree_dec.c.o[0m
+[  3%] Built target ittnotify
+[  3%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/graph.cpp.o[0m
+[  3%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcdctmgr.c.o[0m
+[  3%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/memory_accessor.cpp.o[0m
+[  3%] [32m[1mLinking C static library ../lib/libquirc.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  3%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/memory_descriptor.cpp.o[0m
+[  3%] Built target quirc
+[  3%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/memory_descriptor_ref.cpp.o[0m
+[  3%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/vp8_dec.c.o[0m
+[  3%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jchuff.c.o[0m
+[  4%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/memory_descriptor_view.cpp.o[0m
+[  4%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/gzclose.c.o[0m
+[  4%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/gzlib.c.o[0m
+[  4%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/vp8l_dec.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/gzread.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dec/webp_dec.c.o[0m
+[  5%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/add.cpp.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/gzwrite.c.o[0m
+[  5%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_table_driven_lite.cc.o[0m
+[  5%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcicc.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/inflate.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_image.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/demux/anim_decode.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/infback.c.o[0m
+[  5%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o[0m
+[  5%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/demux/demux.c.o[0m
+[  5%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/metadata.cpp.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/inftrees.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/inffast.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/trees.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/alpha_processing.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_init.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/uncompr.c.o[0m
+[  5%] [32mBuilding C object 3rdparty/zlib/CMakeFiles/zlib.dir/zutil.c.o[0m
+[  5%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/add_weighted.cpp.o[0m
+[  5%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/bitwise.cpp.o[0m
+[  6%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcinit.c.o[0m
+[  6%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/alpha_processing_mips_dsp_r2.c.o[0m
+[  7%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/alpha_processing_neon.c.o[0m
+[  7%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcmainct.c.o[0m
+[  7%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/alpha_processing_sse2.c.o[0m
+[  7%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_malloc.c.o[0m
+[  8%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_seq.c.o[0m
+[  8%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/metatypes.cpp.o[0m
+[  8%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/node.cpp.o[0m
+[  8%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_stream.c.o[0m
+[  8%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/alpha_processing_sse41.c.o[0m
+[  9%] [32m[1mLinking C static library ../lib/libzlib.a[0m
+[  9%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/cost.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  9%] Built target zlib
+[  9%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_string.c.o[0m
+[  9%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/blur.cpp.o[0m
+[  9%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/cost_mips32.c.o[0m
+[  9%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/canny.cpp.o[0m
+[  9%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/cost_mips_dsp_r2.c.o[0m
+[  9%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/cost_neon.c.o[0m
+[  9%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/cost_sse2.c.o[0m
+[  9%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_tmr.c.o[0m
+[  9%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/channel_extract.cpp.o[0m
+[ 10%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/channels_combine.cpp.o[0m
+[ 10%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_tvp.c.o[0m
+[ 10%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_version.c.o[0m
+[ 10%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/cpu.c.o[0m
+[ 10%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jp2_cod.c.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec.c.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jp2_dec.c.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcmarker.c.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_clip_tables.c.o[0m
+[ 11%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/passes/communications.cpp.o[0m
+[ 11%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/search.cpp.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_mips32.c.o[0m
+[ 11%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/subgraphs.cpp.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_mips_dsp_r2.c.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_msa.c.o[0m
+[01m[K/packages/opencv-build/build/opencv-4.1.1/3rdparty/carotene/src/blur.cpp:[m[K In function '[01m[Kvoid carotene_o4t::blur3x3(const carotene_o4t::Size2D&, carotene_o4t::s32, const u8*, std::ptrdiff_t, carotene_o4t::u8*, std::ptrdiff_t, carotene_o4t::BORDER_MODE, carotene_o4t::u8)[m[K':
+[01m[K/packages/opencv-build/build/opencv-4.1.1/3rdparty/carotene/src/blur.cpp:219:24:[m[K [01;35m[Kwarning: [m[K'[01m[Kt2[m[K' may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+     uint16x8_t t0, t1, [01;35m[Kt2[m[K;
+                        [01;35m[K^~[m[K
+[ 11%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_neon.c.o[0m
+[ 11%] [32mBuilding CXX object modules/CMakeFiles/ade.dir/__/3rdparty/ade/ade-0.1.1d/sources/ade/source/topological_sort.cpp.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jp2_enc.c.o[0m
+[ 11%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcmaster.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_bs.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcomapi.c.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 12%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcparam.c.o[0m
+[35m[1mScanning dependencies of target libtiff[0m
+[ 12%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_dec.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_cs.c.o[0m
+[ 12%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 12%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/cmp.cpp.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_aux.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_sse2.c.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 12%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/dec_sse41.c.o[0m
+[35m[1mScanning dependencies of target libpng[0m
+[ 12%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcphuff.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 12%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_close.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/png.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_enc.c.o[0m
+[ 12%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_codec.c.o[0m
+[ 13%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_color.c.o[0m
+[ 13%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcprepct.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc_mips32.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc_mips_dsp_r2.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc_msa.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_compress.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc_neon.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcsample.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_math.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mct.c.o[0m
+[ 14%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_dir.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jctrans.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_dirinfo.c.o[0m
+[ 15%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mqcod.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdapimin.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc_sse2.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mqdec.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/enc_sse41.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/filters.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdapistd.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/filters_mips_dsp_r2.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/filters_msa.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdatadst.c.o[0m
+[ 15%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdatasrc.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/filters_neon.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/filters_sse2.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdcoefct.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdcolor.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jddctmgr.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngerror.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdhuff.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mqenc.c.o[0m
+[ 16%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_dirread.c.o[0m
+[ 17%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_qmfb.c.o[0m
+[ 18%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o[0m
+[ 18%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o[0m
+[ 18%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdicc.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdinput.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc_mips32.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngget.c.o[0m
+[ 19%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o[0m
+[ 19%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/colorconvert.cpp.o[0m
+[ 19%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/atomicops_internals_x86_gcc.cc.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngmem.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc_mips_dsp_r2.c.o[0m
+[ 19%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc_msa.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngpread.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc_neon.c.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdmainct.c.o[0m
+[ 19%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o[0m
+[ 19%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o[0m
+[ 19%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc_sse2.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_enc_sse41.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdmarker.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdmaster.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_mips_dsp_r2.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_msa.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngread.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_neon.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/lossless_sse2.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/rescaler.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdmerge.c.o[0m
+[ 20%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/common.cpp.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngrio.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_dirwrite.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/rescaler_mips32.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/rescaler_mips_dsp_r2.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdphuff.c.o[0m
+[ 20%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/rescaler_msa.c.o[0m
+[ 20%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/io_win32.cc.o[0m
+[ 21%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/rescaler_neon.c.o[0m
+[ 21%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/once.cc.o[0m
+[ 21%] [32m[1mLinking CXX static library ../lib/libade.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 21%] Built target ade
+[ 21%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdpostct.c.o[0m
+[ 22%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o[0m
+[ 22%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o[0m
+[ 22%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/rescaler_sse2.c.o[0m
+[ 22%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdsample.c.o[0m
+[ 22%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/ssim.c.o[0m
+[ 22%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/ssim_sse2.c.o[0m
+[ 22%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/upsampling.c.o[0m
+[ 22%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o[0m
+[ 22%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/upsampling_mips_dsp_r2.c.o[0m
+[ 22%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/convert.cpp.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdtrans.c.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jerror.c.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t1cod.c.o[0m
+[ 23%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/convert_depth.cpp.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jfdctflt.c.o[0m
+[ 23%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/convert_scale.cpp.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jfdctfst.c.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t1dec.c.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/upsampling_msa.c.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngrtran.c.o[0m
+[ 23%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/upsampling_neon.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngrutil.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jfdctint.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_dumpmode.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jidctflt.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_error.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_extension.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngset.c.o[0m
+[ 24%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jidctfst.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_fax3.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_fax3sm.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jidctint.c.o[0m
+[ 25%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_flush.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_getimage.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngtrans.c.o[0m
+[ 25%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o[0m
+[ 25%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t1enc.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngwio.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/upsampling_sse2.c.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngwrite.c.o[0m
+[ 25%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/convolution.cpp.o[0m
+[ 25%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/upsampling_sse41.c.o[0m
+[ 25%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/count_nonzero.cpp.o[0m
+[ 26%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/yuv.c.o[0m
+[ 27%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/div.cpp.o[0m
+[ 27%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_jbig.c.o[0m
+[ 27%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/dot_product.cpp.o[0m
+[ 27%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_jpeg_12.c.o[0m
+[ 27%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/fast.cpp.o[0m
+[ 27%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngwtran.c.o[0m
+[ 27%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o[0m
+[ 27%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jidctred.c.o[0m
+[ 27%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jquant1.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/yuv_mips32.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/pngwutil.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/yuv_mips_dsp_r2.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/yuv_neon.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/yuv_sse2.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t2cod.c.o[0m
+[ 28%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/fill_minmaxloc.cpp.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/dsp/yuv_sse41.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jquant2.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jutils.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jmemmgr.c.o[0m
+[ 28%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/flip.cpp.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t2dec.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/alpha_enc.c.o[0m
+[ 28%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o[0m
+[ 28%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/gaussian_blur.cpp.o[0m
+[ 28%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/in_range.cpp.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t2enc.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/analysis_enc.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jmemnobs.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jaricom.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/backward_references_cost_enc.c.o[0m
+[ 28%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jcarith.c.o[0m
+[ 28%] [32mBuilding ASM object 3rdparty/libpng/CMakeFiles/libpng.dir/arm/filter_neon.S.o[0m
+[ 29%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o[0m
+[ 29%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_tagtree.c.o[0m
+[ 29%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/arm/arm_init.c.o[0m
+[ 30%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/arm/filter_neon_intrinsics.c.o[0m
+[ 30%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_tsfb.c.o[0m
+[ 31%] [32mBuilding C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_util.c.o[0m
+[ 31%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/integral.cpp.o[0m
+[ 31%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o[0m
+[ 31%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jdarith.c.o[0m
+[ 31%] [32m[1mLinking C static library ../lib/liblibjasper.a[0m
+[ 31%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o[0m
+[ 31%] [32mBuilding C object 3rdparty/libpng/CMakeFiles/libpng.dir/arm/palette_neon_intrinsics.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 31%] Built target libjasper
+[ 31%] [32mBuilding C object 3rdparty/libjpeg-turbo/CMakeFiles/libjpeg-turbo.dir/src/jsimd_none.c.o[0m
+[ 31%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o[0m
+[ 31%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o[0m
+[ 31%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o[0m
+[ 32%] [32m[1mLinking C static library ../lib/liblibjpeg-turbo.a[0m
+[ 32%] [32m[1mLinking C static library ../lib/liblibpng.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 32%] Built target libjpeg-turbo
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 32%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o[0m
+[ 32%] Built target libpng
+[ 33%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/backward_references_enc.c.o[0m
+[ 33%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_jpeg.c.o[0m
+[ 33%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/config_enc.c.o[0m
+[ 33%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/cost_enc.c.o[0m
+[ 33%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/filter_enc.c.o[0m
+[ 33%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/frame_enc.c.o[0m
+[ 33%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/laplacian.cpp.o[0m
+[ 34%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/magnitude.cpp.o[0m
+[ 34%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/meanstddev.cpp.o[0m
+[ 34%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_luv.c.o[0m
+[ 34%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_lzma.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_lzw.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/histogram_enc.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_next.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_ojpeg.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_packbits.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_open.c.o[0m
+[ 35%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/iterator_enc.c.o[0m
+[ 35%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/median_filter.cpp.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_pixarlog.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_predict.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_print.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/near_lossless_enc.c.o[0m
+[ 35%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/picture_csp_enc.c.o[0m
+[ 36%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/picture_enc.c.o[0m
+[ 36%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/min_max.cpp.o[0m
+[ 36%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_read.c.o[0m
+[ 36%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o[0m
+[ 37%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o[0m
+[ 37%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/picture_psnr_enc.c.o[0m
+[ 37%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/picture_rescale_enc.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_strip.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_swab.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/picture_tools_enc.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_thunder.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_tile.c.o[0m
+[ 38%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o[0m
+[ 38%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_table_driven.cc.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_version.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/predictor_enc.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_warning.c.o[0m
+[ 38%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_webp.c.o[0m
+[ 38%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_write.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/quant_enc.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/syntax_enc.c.o[0m
+[ 38%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/minmaxloc.cpp.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_zip.c.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/token_enc.c.o[0m
+[ 38%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o[0m
+[ 38%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/tree_enc.c.o[0m
+[ 39%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_zstd.c.o[0m
+[ 39%] [32mBuilding CXX object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_stream.cxx.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/vp8l_enc.c.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/enc/webp_enc.c.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/mux/anim_encode.c.o[0m
+[ 40%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libtiff/CMakeFiles/libtiff.dir/tif_unix.c.o[0m
+[ 40%] [32m[1mLinking CXX static library ../lib/liblibtiff.a[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/mux/muxedit.c.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 40%] Built target libtiff
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/mux/muxinternal.c.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/mux/muxread.c.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/bit_reader_utils.c.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/bit_writer_utils.c.o[0m
+[ 40%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/color_cache_utils.c.o[0m
+[ 40%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/morph.cpp.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/filters_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/huffman_encode_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/huffman_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/quant_levels_dec_utils.c.o[0m
+[ 41%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/mul.cpp.o[0m
+[ 41%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/norm.cpp.o[0m
+[ 41%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/quant_levels_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/random_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/rescaler_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/thread_utils.c.o[0m
+[ 41%] [32mBuilding C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/src/utils/utils.c.o[0m
+[ 41%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/opticalflow.cpp.o[0m
+[ 41%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o[0m
+[ 42%] [32m[1mLinking C static library ../lib/liblibwebp.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 42%] Built target libwebp
+[ 43%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/phase.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/pyramid.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/reduce.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/remap.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/resize.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/mathlimits.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/scharr.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/separable_filter.cpp.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o[0m
+[ 44%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/sobel.cpp.o[0m
+[ 45%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o[0m
+[ 45%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/sub.cpp.o[0m
+[ 45%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/sum.cpp.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/template_matching.cpp.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/threshold.cpp.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/warp_affine.cpp.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/carotene/hal/carotene/CMakeFiles/carotene_objs.dir/src/warp_perspective.cpp.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o[0m
+[ 46%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o[0m
+[ 47%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o[0m
+[ 48%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o[0m
+[ 48%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o[0m
+[ 48%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o[0m
+[ 48%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o[0m
+[ 48%] [32mBuilding CXX object 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 48%] Built target carotene_objs
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target tegra_hal[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 48%] [32m[1mLinking CXX static library ../../lib/libtegra_hal.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 48%] Built target tegra_hal
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 48%] [34m[1mProcessing OpenCL kernels (core)[0m
+[35m[1mScanning dependencies of target opencv_core[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/algorithm.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/alloc.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/arithm.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/arithm.dispatch.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/array.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/async.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/batch_distance.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/bindings_utils.cpp.o[0m
+[ 49%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/channels.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/check.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/convert.dispatch.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/convert_c.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/convert_scale.dispatch.cpp.o[0m
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library ../lib/liblibprotobuf.a[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/count_non_zero.dispatch.cpp.o[0m
+[ 50%] Built target libprotobuf
+[ 50%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o[0m
+[ 51%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/hal_internal.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/logger.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/lut.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs_core.dispatch.cpp.o[0m
+[ 52%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matmul.dispatch.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_c.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_decomp.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_expressions.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_iterator.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_operations.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_sparse.cpp.o[0m
+[ 53%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_wrap.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/mean.dispatch.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/merge.dispatch.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/minmax.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/norm.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/ocl.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o[0m
+[ 54%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/ovx.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/parallel_impl.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence_json.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence_types.cpp.o[0m
+[ 55%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence_xml.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence_yml.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/softfloat.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/split.dispatch.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/stat.dispatch.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/stat_c.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/stl.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/sum.dispatch.cpp.o[0m
+[ 56%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/system.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/trace.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/utils/datafile.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/utils/filesystem.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/utils/logtagconfigparser.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/utils/logtagmanager.cpp.o[0m
+[ 57%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/utils/samples.cpp.o[0m
+[ 58%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/src/va_intel.cpp.o[0m
+[ 58%] [32mBuilding CXX object modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o[0m
+[ 58%] [32m[1mLinking CXX shared library ../../lib/libopencv_core.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 58%] Built target opencv_core
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_version[0m
+[35m[1mScanning dependencies of target opencv_ml[0m
+[35m[1mScanning dependencies of target opencv_flann[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 58%] [34m[1mProcessing OpenCL kernels (imgproc)[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 58%] [32mBuilding CXX object apps/version/CMakeFiles/opencv_version.dir/opencv_version.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 59%] [32mBuilding CXX object modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o[0m
+[ 59%] [32mBuilding CXX object modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o[0m
+[ 59%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o[0m
+[ 59%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/ann_mlp.cpp.o[0m
+[ 59%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o[0m
+[ 59%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o[0m
+[ 59%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o[0m
+[35m[1mScanning dependencies of target opencv_imgproc[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 60%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable ../../bin/opencv_version[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 60%] Built target opencv_version
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/svmsgd.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.dispatch.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o[0m
+[ 60%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/bilateral_filter.dispatch.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/blend.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/box_filter.dispatch.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color_hsv.dispatch.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color_lab.cpp.o[0m
+[ 61%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color_rgb.dispatch.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color_yuv.dispatch.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o[0m
+[ 62%] [32m[1mLinking CXX shared library ../../lib/libopencv_ml.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 62%] Built target opencv_ml
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o[0m
+[ 62%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.dispatch.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o[0m
+[ 63%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o[0m
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o[0m
+[ 64%] [32m[1mLinking CXX shared library ../../lib/libopencv_flann.so[0m
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 64%] Built target opencv_flann
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o[0m
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o[0m
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o[0m
+In file included from [01m[K/packages/opencv-build/build/opencv-4.1.1/build/custom_hal.hpp:5[m[K,
+                 from [01m[K/packages/opencv-build/build/opencv-4.1.1/modules/imgproc/src/hal_replacement.hpp:783[m[K,
+                 from [01m[K/packages/opencv-build/build/opencv-4.1.1/modules/imgproc/src/precomp.hpp:54[m[K,
+                 from [01m[K/packages/opencv-build/build/opencv-4.1.1/modules/imgproc/src/filter.dispatch.cpp:43[m[K:
+[01m[K/packages/opencv-build/build/opencv-4.1.1/build/carotene/tegra_hal.hpp:[m[K In function '[01m[Kint TEGRA_FILTERINIT(cvhalFilter2D**, uchar*, size_t, int, int, int, int, int, int, int, int, double, int, int, bool, bool)[m[K':
+[01m[K/packages/opencv-build/build/opencv-4.1.1/build/carotene/tegra_hal.hpp:1129:9:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K-Wimplicit-fallthrough=[m[K]
+         [01;35m[K}[m[K
+         [01;35m[K^[m[K
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o[0m
+[01m[K/packages/opencv-build/build/opencv-4.1.1/build/carotene/tegra_hal.hpp:1130:5:[m[K [01;36m[Knote: [m[Khere
+     [01;36m[Kdefault[m[K:
+     [01;36m[K^~~~~~~[m[K
+[01m[K/packages/opencv-build/build/opencv-4.1.1/build/carotene/tegra_hal.hpp:[m[K In function '[01m[Kint TEGRA_SEPFILTERINIT(cvhalFilter2D**, int, int, int, uchar*, int, uchar*, int, int, int, double, int)[m[K':
+[01m[K/packages/opencv-build/build/opencv-4.1.1/build/carotene/tegra_hal.hpp:1245:29:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K-Wimplicit-fallthrough=[m[K]
+         [01;35m[Kctx->kernely_data[2]=((int16_t*)kernely_data)[2][m[K;
+         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/packages/opencv-build/build/opencv-4.1.1/build/carotene/tegra_hal.hpp:1246:5:[m[K [01;36m[Knote: [m[Khere
+     [01;36m[Kdefault[m[K:
+     [01;36m[K^~~~~~~[m[K
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o[0m
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o[0m
+[ 64%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/main.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/median_blur.dispatch.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.dispatch.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/resize.cpp.o[0m
+[ 65%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.dispatch.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/spatialgradient.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o[0m
+[ 66%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o[0m
+[ 67%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o[0m
+[ 67%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o[0m
+[ 67%] [32mBuilding CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o[0m
+[ 67%] [32m[1mLinking CXX shared library ../../lib/libopencv_imgproc.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 67%] Built target opencv_imgproc
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_gapi[0m
+[ 67%] [34m[1mProcessing OpenCL kernels (dnn)[0m
+[35m[1mScanning dependencies of target opencv_imgcodecs[0m
+[ 68%] [34m[1mProcessing OpenCL kernels (features2d)[0m
+[ 69%] [34m[1mProcessing OpenCL kernels (photo)[0m
+[35m[1mScanning dependencies of target opencv_photo[0m
+[35m[1mScanning dependencies of target opencv_features2d[0m
+[35m[1mScanning dependencies of target opencv_dnn[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 69%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_bmp.cpp.o[0m
+[ 69%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_base.cpp.o[0m
+[ 69%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o[0m
+[ 69%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/utils.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdcm.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/loadsave.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 70%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gorigin.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/align.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/agast.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 70%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/caffe/opencv-caffe.pb.cc.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pam.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/onnx/opencv-onnx.pb.cc.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pfm.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gmat.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/agast_score.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/garray.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/calibrate.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o[0m
+[ 70%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gscalar.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gkernel.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/rgbe.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gbackend.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gproto.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/exif.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o[0m
+[ 71%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gnode.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gcall.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/gcomputation.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/operators.cpp.o[0m
+[ 72%] [32m[1mLinking CXX shared library ../../lib/libopencv_imgcodecs.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 72%] Built target opencv_imgcodecs
+[ 72%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/draw.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_core.cpp.o[0m
+[ 72%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/kernels_imgproc.cpp.o[0m
+[ 73%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/merge.cpp.o[0m
+[ 73%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o[0m
+[ 73%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/dynamic.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/evaluation.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/api/render.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/attr_value.pb.cc.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gmodel.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_videoio[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 74%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/videoio_registry.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/feature2d.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/gftt.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gmodelbuilder.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning_impl.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/function.pb.cc.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o[0m
+[ 74%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/graph.pb.cc.o[0m
+[ 74%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/videoio_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/op_def.pb.cc.o[0m
+[ 75%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/tensor.pb.cc.o[0m
+[ 75%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/tensor_shape.pb.cc.o[0m
+[ 75%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o[0m
+[ 75%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/types.pb.cc.o[0m
+[ 76%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gislandmodel.cpp.o[0m
+[ 76%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gcompiler.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/misc/tensorflow/versions.pb.cc.o[0m
+[ 77%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/caffe/caffe_importer.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/caffe/caffe_io.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/caffe/caffe_shrinker.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/keypoint.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/darknet/darknet_importer.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/gcompiled.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/helpers.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/main.cpp.o[0m
+[ 77%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o[0m
+[ 78%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/backend_plugin.cpp.o[0m
+[ 78%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/darknet/darknet_io.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/dnn.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/halide_scheduler.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/dump_dot.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/islands.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/init.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/meta.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/kernels.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/backend_static.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library ../../lib/libopencv_photo.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 79%] Built target opencv_photo
+[ 79%] [32mBuilding CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/batch_norm_layer.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/blank_layer.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/concat_layer.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/container_avi.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/compiler/passes/exec.cpp.o[0m
+[ 79%] [32mBuilding CXX object modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_v4l.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/executor/gexecutor.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/executor/gasync.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpubackend.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpukernel.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library ../../lib/libopencv_features2d.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 80%] Built target opencv_features2d
+[ 80%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpuimgproc.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/const_layer.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/convolution_layer.cpp.o[0m
+[ 80%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/crop_and_resize_layer.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 80%] [34m[1mProcessing OpenCL kernels (calib3d)[0m
+[35m[1mScanning dependencies of target opencv_calib3d[0m
+[ 80%] [32m[1mLinking CXX shared library ../../lib/libopencv_videoio.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 80%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ap3p.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 80%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibinit.cpp.o[0m
+[ 80%] Built target opencv_videoio
+[ 80%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/detection_output_layer.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calibration_handeye.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/cpu/gcpucore.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidbuffer.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/elementwise_layers.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidbackend.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidimgproc.cpp.o[0m
+[ 81%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/checkchessboard.cpp.o[0m
+[ 82%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidimgproc_func.dispatch.cpp.o[0m
+[ 82%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/fluid/gfluidcore.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/chessboard.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/eltwise_layer.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclbackend.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclkernel.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/flatten_layer.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_ptsetreg.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclimgproc.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/fully_connected_layer.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/layers_common.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/lrn_layer.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/ocl/goclcore.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/max_unpooling_layer.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/common/gcompoundbackend.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/gapi/CMakeFiles/opencv_gapi.dir/src/backends/common/gcompoundkernel.cpp.o[0m
+[ 83%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o[0m
+[ 84%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ippe.cpp.o[0m
+[ 84%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/mvn_layer.cpp.o[0m
+[ 85%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/normalize_bbox_layer.cpp.o[0m
+[ 85%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/padding_layer.cpp.o[0m
+[ 85%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/permute_layer.cpp.o[0m
+[ 85%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o[0m
+[ 85%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/main.cpp.o[0m
+[ 85%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_highgui[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 86%] [32mBuilding CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o[0m
+[ 86%] [32m[1mLinking CXX shared library ../../lib/libopencv_gapi.so[0m
+[ 86%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/roiSelector.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 86%] Built target opencv_gapi
+[ 86%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/pooling_layer.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/prior_box_layer.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/proposal_layer.cpp.o[0m
+[ 86%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/rho.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/recurrent_layers.cpp.o[0m
+[ 87%] [32m[1mLinking CXX shared library ../../lib/libopencv_highgui.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 87%] Built target opencv_highgui
+[ 87%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/region_layer.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/undistort.dispatch.cpp.o[0m
+[ 87%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/reorg_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/reshape_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/resize_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/scale_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/shuffle_channel_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/slice_layer.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_annotation[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 88%] [32mBuilding CXX object apps/annotation/CMakeFiles/opencv_annotation.dir/opencv_annotation.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/softmax_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/upnp.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_visualisation[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 88%] [32mBuilding CXX object apps/visualisation/CMakeFiles/opencv_visualisation.dir/opencv_visualisation.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/layers/split_layer.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/nms.cpp.o[0m
+[ 88%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/common.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/math_functions.cpp.o[0m
+[ 89%] [32m[1mLinking CXX executable ../../bin/opencv_annotation[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 89%] Built target opencv_annotation
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_conv_spatial.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_inner_product.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_lrn.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_pool.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/ocl4dnn/src/ocl4dnn_softmax.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/onnx/onnx_importer.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/op_halide.cpp.o[0m
+[ 89%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/op_inf_engine.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/op_vkcom.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tensorflow/tf_graph_simplifier.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable ../../bin/opencv_visualisation[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tensorflow/tf_importer.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 90%] Built target opencv_visualisation
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/tensorflow/tf_io.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/THDiskFile.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/THFile.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/THGeneral.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/torch/torch_importer.cpp.o[0m
+[ 90%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/avg_pool_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/concat_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/conv48_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/conv_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/dw_conv_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/lrn_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/max_pool_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/permute_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/prior_box_spv.cpp.o[0m
+[ 91%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/relu_spv.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/shader/softmax_spv.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/buffer.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/context.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/internal.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_base.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_concat.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_conv.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_lrn.cpp.o[0m
+[ 92%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_permute.cpp.o[0m
+[ 93%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_pool.cpp.o[0m
+[ 93%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_prior_box.cpp.o[0m
+[ 93%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_relu.cpp.o[0m
+[ 93%] [32m[1mLinking CXX shared library ../../lib/libopencv_calib3d.so[0m
+[ 93%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/op_softmax.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 93%] Built target opencv_calib3d
+[ 93%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/src/tensor.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 94%] [34m[1mProcessing OpenCL kernels (objdetect)[0m
+[ 94%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/vulkan/vk_functions.cpp.o[0m
+[35m[1mScanning dependencies of target opencv_objdetect[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 94%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o[0m
+[ 94%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect_convert.cpp.o[0m
+[ 94%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o[0m
+[ 94%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o[0m
+[ 94%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/src/vkcom/vulkan/vk_loader.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 95%] [34m[1mProcessing OpenCL kernels (stitching)[0m
+[35m[1mScanning dependencies of target opencv_stitching[0m
+[ 95%] [32mBuilding CXX object modules/dnn/CMakeFiles/opencv_dnn.dir/opencl_kernels_dnn.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 95%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o[0m
+[ 95%] [34m[1mProcessing OpenCL kernels (video)[0m
+[35m[1mScanning dependencies of target opencv_video[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/dis_flow.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/main.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/qrcode.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/blenders.cpp.o[0m
+[ 96%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/optical_flow_io.cpp.o[0m
+[ 97%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/src/variational_refinement.cpp.o[0m
+[ 97%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/camera.cpp.o[0m
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_interactive-calibration[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 97%] [32mBuilding CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/calibController.cpp.o[0m
+[ 97%] [32mBuilding CXX object modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o[0m
+[ 97%] [32mBuilding CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/calibPipeline.cpp.o[0m
+[ 97%] [32mBuilding CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/frameProcessor.cpp.o[0m
+[ 97%] [32mBuilding CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/main.cpp.o[0m
+[ 97%] [32m[1mLinking CXX shared library ../../lib/libopencv_dnn.so[0m
+[ 97%] [32mBuilding CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/parametersController.cpp.o[0m
+[ 97%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/exposure_compensate.cpp.o[0m
+[ 97%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/matchers.cpp.o[0m
+[ 97%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/motion_estimators.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 97%] Built target opencv_dnn
+[ 98%] [32mBuilding CXX object apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/rotationConverters.cpp.o[0m
+[ 98%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/seam_finders.cpp.o[0m
+[ 98%] [32m[1mLinking CXX shared library ../../lib/libopencv_objdetect.so[0m
+[ 98%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/stitcher.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 98%] Built target opencv_objdetect
+[100%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/timelapsers.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library ../../lib/libopencv_video.so[0m
+[100%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.o[0m
+[100%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] Built target opencv_video
+[100%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers_cuda.cpp.o[0m
+[100%] [32mBuilding CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ../../bin/opencv_interactive-calibration[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] Built target opencv_interactive-calibration
+[100%] [32m[1mLinking CXX shared library ../../lib/libopencv_stitching.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] Built target opencv_stitching
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[35m[1mScanning dependencies of target opencv_python3[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] [32mBuilding CXX object modules/python3/CMakeFiles/opencv_python3.dir/__/src2/cv2.cpp.o[0m
+syn   [100%] [32m[1mLinking CXX shared module ../../lib/python3/cv2.cpython-37m-arm-linux-gnueabihf.so[0m
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] Built target opencv_python3
+make[1]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[1]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  2%] Built target zlib
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[  8%] Built target libjpeg-turbo
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 13%] Built target libtiff
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 26%] Built target libwebp
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 30%] Built target libjasper
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 32%] Built target libpng
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 40%] Built target libprotobuf
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 41%] Built target quirc
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 46%] Built target carotene_objs
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 46%] Built target tegra_hal
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 47%] Built target ittnotify
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 48%] Built target ade
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 48%] Built target opencv_videoio_plugins
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 58%] Built target opencv_core
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 59%] Built target opencv_flann
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 66%] Built target opencv_imgproc
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 67%] Built target opencv_ml
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 69%] Built target opencv_photo
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 79%] Built target opencv_dnn
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 82%] Built target opencv_features2d
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 86%] Built target opencv_gapi
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 88%] Built target opencv_imgcodecs
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 89%] Built target opencv_videoio
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 92%] Built target opencv_calib3d
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 93%] Built target opencv_highgui
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 94%] Built target opencv_objdetect
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 96%] Built target opencv_stitching
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 98%] Built target opencv_video
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 98%] Built target gen_opencv_python_source
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 98%] Built target opencv_python3
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 98%] Built target opencv_annotation
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[ 98%] Built target opencv_visualisation
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] Built target opencv_interactive-calibration
+make[2]: Entering directory '/packages/opencv-build/build/opencv-4.1.1/build'
+make[2]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[100%] Built target opencv_version
+make[1]: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+[36mRun CPack packaging tool...[0m
+CPack: Create package using DEB
+CPack: Install projects
+CPack: - Run preinstall target for: OpenCV
+CPack: - Install project: OpenCV
+CPack: -   Install component: dev
+CPack: -   Install component: libs
+CPack: -   Install component: licenses
+CPack: -   Install component: python
+CPack: -   Install component: scripts
+CPack: Create package
+-- CPACK_DEBIAN_PACKAGE_DEPENDS not set, the package will have no dependencies.
+-- CPACK_DEBIAN_PACKAGE_DEPENDS not set, the package will have no dependencies.
+-- CPACK_DEBIAN_PACKAGE_DEPENDS not set, the package will have no dependencies.
+-- CPACK_DEBIAN_PACKAGE_DEPENDS not set, the package will have no dependencies.
+-- CPACK_DEBIAN_PACKAGE_DEPENDS not set, the package will have no dependencies.
+CPack: - package: /packages/opencv-build/build/opencv-4.1.1/build/OpenCV-c16fae2-armhf-dev.deb generated.
+CPack: - package: /packages/opencv-build/build/opencv-4.1.1/build/OpenCV-c16fae2-armhf-libs.deb generated.
+CPack: - package: /packages/opencv-build/build/opencv-4.1.1/build/OpenCV-c16fae2-armhf-licenses.deb generated.
+CPack: - package: /packages/opencv-build/build/opencv-4.1.1/build/OpenCV-c16fae2-armhf-python.deb generated.
+CPack: - package: /packages/opencv-build/build/opencv-4.1.1/build/OpenCV-c16fae2-armhf-scripts.deb generated.
+make: Leaving directory '/packages/opencv-build/build/opencv-4.1.1/build'
+curl: no URL specified!
+curl: try 'curl --help' for more information
